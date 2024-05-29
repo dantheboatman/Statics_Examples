@@ -1,0 +1,74 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: Welcome to
+    text: Engineering Statics - Open and Interactive
+    button: Explore the Book
+    buttonlink: "#explore"
+
+  services:
+    title: "Explore"
+    text: "Dive into the world of Engineering Statics with our comprehensive, free and open textbook designed for educators, students, and self-learners alike. Engineering Statics: Open and Interactive brings a fresh approach to understanding the principles of statics through interactive content, rich visuals, and accessible material for all levels."
+    section: explore
+    list:
+      - title: "Read Online"
+        desc: "Read the most up to date version with direct access to the interactive figures and review problems."
+        icon: assets\img\icon\ebook_Freepik.png assets\img\icon\download_freepik.png
+      - title: "Download PDF"
+        desc: "Download a PDF to read offline or print."
+        icon: assets\img\icon\download_freepik.png
+      - title: "Watch Videos"
+        desc: "Watch related YouTube videos from @drdanteaches Statics playlist"
+        icon: fab youtube
+
+  about:
+    title: "Should you choose this book?"
+    text: "Why, yes. You should. But read more below to learn why."
+    body: "Here are a few reasons that this book will be a valuable companion to help you learn statics.
+    - **Accessible**: Our book is freely available online or as a PDF to anyone, anywhere, any time. We believe in making quality educational materials accessible to all.
+    - **Interactive**: With our interactive figures, you'll not just read about statics; you'll reinforce your learning by testing your understanding in real time.
+    - **Comprehensive**: The book covers the typical topics included statics courses, including both two- and three- dimensional topics and multiple approches to shear and moment diagrams."
+    section: about
+
+  about:
+    title: "Our story"
+    text: "Many hands make light(er) work."
+    body: "Engineering Statics: Open and Interactive is the vision of a handful of instructors who wanted to create a free and open Engineering Statics textbook filled with dynamic, interactive diagrams to encourage visualization and engineering intuition.
+    Daniel (Dan) Baker (@drdanteaches on [YouTube](https://www.youtube.com/channel/UC4Z8tnZs5fGlEs1CYjw9JyQ), [LinkedIn](https://www.linkedin.com/in/drdanteaches/), and [Twitter/X](https://twitter.com/drdanteaches)) launched the project in late 2018 and coordinated a [team of engineering faculty](https://engineeringstatics.org/acknowledgement.html) from large public universities, small private colleges, and community colleges across the United States to write the text and create the interactive elements. Multiple chapters were adapted with permission from Jacob Moore’s [Mechanics Map - Open Textbook Project](http://mechanicsmap.psu.edu/). William Haynes was a chapter author and then published the book using [PreTeXt](https://pretextbook.org/). The book was released to the public in Fall 2020. The book continues to evolve thanks to the contributions, suggestions, and corrections made by users of the text, both professors and students."
+    section: about
+
+  team:
+    title: "OUR AMAZING TEAM"
+    text: "Lorem ipsum dolor sit amet consectetur."
+    subtext: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde. **Markdown** supported.
+    section: team
+    people:
+      - name: "Daniel (Dan) Baker"
+        role: "Project lead, chapter author, and interactive developer"
+        image: assets\img\team\1.jpg
+        social:
+          - url: https://twitter.com/drdanteaches
+            icon: fab x-twitter
+          - url: https://www.linkedin.com/in/drdanteaches/
+            icon: fab fa-linkedin-in
+          - url: https://www.youtube.com/channel/UC4Z8tnZs5fGlEs1CYjw9JyQ
+            icon: fab youtube
+      - name: "William Haynes"
+        role: "Chapter author, interactive developer, and PreTeXt lead"
+        image: assets/img/team/2.jpg
+        social:
+
+  contact:
+    title: "Contact Us"
+    text: "We'd love to hear from you! Whether you have questions, feedback, or suggestions, feel free to" 
+  <a href="mailto:Dan.Baker%40colostate.edu?subject=Feedback%3A%20Engineering%20Statics%20Text&amp;cc=whaynes%40maritime.edu">Contact Us!</a>
