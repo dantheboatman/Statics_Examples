@@ -14,7 +14,7 @@
 #theme: jekyll-agency
 remote_theme: raviriley/agency-jekyll-theme
 
-url    : "https://engineeringstatics.org" # the base hostname & protocol for your site, e.g. http://example.com
+url    : "https://dantheboatman.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 baseurl: "/site" # the subpath of your site, e.g. /blog
 
 title      : Engineering Statics - Open and Interactive Landing Page
