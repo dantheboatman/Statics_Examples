@@ -1,0 +1,339 @@
+<?xml version='1.0' encoding='utf-8'?>
+
+<pretext xml:lang="en-US" xmlns:xi="http://www.w3.org/2001/XInclude">
+
+  <docinfo>
+    <macros>
+      \newcommand{\R}{\mathbb R}
+    </macros>
+    <latex-image-preamble>
+      \usepackage{tikz}
+    </latex-image-preamble>
+  </docinfo>
+
+  <book xml:id="my-great-book">
+    <title>My Great Book</title>
+    <subtitle>An example to get you started</subtitle>
+
+    <frontmatter xml:id="frontmatter">
+      <titlepage>
+        <author>
+          <personname>You</personname>
+          <department>Your department</department>
+          <institution>Your institution</institution>
+        </author>
+        <date>
+          <today />
+        </date>
+      </titlepage>
+
+      <colophon>
+
+        <website>
+          <name>
+            <c>example.org</c>
+          </name>
+          <address>https://example.org</address>
+        </website>
+
+        <copyright>
+          <year>2020<ndash />2023</year>
+          <holder>You</holder>
+          <shortlicense> 
+            This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit <url href="http://creativecommons.org/licenses/by-sa/4.0/" visual="creativecommons.org/licenses/by-sa/4.0"> CreativeCommons.org</url>
+          </shortlicense>
+        </copyright>
+      </colophon>
+    </frontmatter>
+
+    <chapter xml:id="chapter-title">
+      <title>Examples</title>
+
+      <section xml:id="Ch2-examples">
+        <title>Examples for Chapter 2</title>
+        <p>Welcome to the Chapter 2 Examples!</p>
+      
+        <example xml:id="Chapter_02-3d-components-direction-cosine">
+          <title>Direction Cosine Angles </title>
+          <statement>
+            <sidebyside widths="50%  50%" valign="middle">
+              <image source="images/3d-components-sketch">
+                <description>A cable force pulls on an anchor ring centered on <m>x</m>, <m>y</m>, <m>z</m> axis origin.</description>
+              </image>
+              <p>A rope pulls on an anchor ring with the Cartesian components <m>\vec{F}=\lbf{\left &lt; 20, -30, 60 \right &gt;}</m>, where <m>lbf</m> represents the force pounds feet.</p>
+            </sidebyside>
+            <p>Find the magnitude of <m>\vec{F}</m> and the direction cosine angles, <m>\theta_x</m>, <m>\theta_y</m>, and <m>\theta_z</m>.
+              components.</p>
+          </statement>
+          <answer>
+            <p>
+              <md>
+                <mrow>F=/lbf{70}</mrow>
+                <mrow>\theta_x=\ang{73.4}</mrow>
+                <mrow>\theta_y=\ang{115.38}</mrow>
+                <mrow>\theta_z=\ang{31.0.}</mrow>
+              </md>
+            </p>
+          </answer>
+          <solution>
+            <p>As the three components of <m>F</m> are perpendicular, we can apply the Pythagorean Theorem to find the magnitude of <m>F</m>.</p>
+            <p>
+              <md>
+                <mrow>F \amp = |\vec{F}| = \sqrt{F_x^2+F_y^2+F_z^2}</mrow>
+                <mrow>\amp = \lbf{\sqrt{20^2 + \left( -30 \right) ^2 + 60^2}}</mrow>
+                <mrow>\amp = \lbf{70}</mrow>
+              </md>
+            </p>
+            <p>Direction cosine angles are equal to the inverse cosine of each Cartesian force component divided by the force magnitude.
+            <md>
+              <mrow>\theta_x \amp = cos^{-1} \left(\frac{F_x}{|\vec{F}|}\right) \amp = cos^{-1}\left( \frac{20}{70}\right) \amp = \ang{73.4}</mrow>
+              <mrow>\theta_y \amp = cos^{-1} \frac{F_y}{|\vec{F}|} \amp = cos^{-1}\left( \frac{-30}{70} \right) \amp = \ang{115.38}</mrow>
+              <mrow>\theta_z \amp = cos^{-1} \frac{F_z}{|\vec{F}|} \amp = cos^{-1}\left( \frac{60}{70} \right) \amp = \ang{31.0}</mrow>
+            </md>
+            </p>
+            <sidebyside widths="50%  50%" valign="middle">
+              <p>In summary, all direction cosine angles are measured from the positive <m>x</m>, <m>y</m>, and <m>z</m> axes. Hence, given the negative value of <m>F_y</m>, the direction cosine angle <m>\theta_y > angle{90}</m>, while both <m>\theta_x</m> and <m>\theta_z</m> are less than <m>\ang{90}</m> as their components are positive.</p>
+              <p><image source="images/3d-components-direction-cosine">
+                <description>Direction cosine angles for <m>\vec{F}</m> measured from the postive axes.</description>
+              </image>
+              </p>
+            </sidebyside>
+          </solution>
+        </example>
+
+        <example xml:id="Chapter_02-3d-components-spherical">
+          <title>Spherical Coordinates</title>
+          <statement>
+            <sidebyside widths="50%  50%" valign="middle">
+              <image source="images/3d-components-sketch">
+                <description>A cable force pulls on an anchor ring centered on <m>x</m>, <m>y</m>, <m>z</m> axis origin.</description>
+              </image>
+              <p>A rope pulls on an anchor ring with the Cartesian components <m>\vec{F}=\lbf{\left &lt; 20, -30, 60 \right &gt;}</m>, where <m>lbf</m> represents the force pounds feet.</p>
+            </sidebyside>
+            <p>Find the sperical coordinates of <m>\vec{F}</m> where <m>\theta</m> is measured from the x axis and <m>\phi</m> is measured from the <m>z</m> axis.</p>
+          </statement>
+          <answer>
+            <p>
+              <md>
+                <mrow>F \amp =/lbf{70}</mrow>
+                <mrow>\theta \amp =\ang{-56.31} \textrm{ or } \theta=\ang{303.69} </mrow>
+                <mrow>\phi \amp =\ang{31}</mrow>
+              </md>
+            </p>
+          </answer>
+          <solution>
+            <p>As the three components of <m>F</m> are perpendicular, we can apply the Pythagorean Theorem to find the magnitude of <m>F</m>.</p>
+            <p>
+              <md>
+                <mrow>F \amp = |\vec{F}| = \sqrt{F_x^2+F_y^2+F_z^2}</mrow>
+                <mrow>\amp = \lbf{\sqrt{20^2 + \left( -30 \right) ^2 + 60^2}}</mrow>
+                <mrow>\amp = \lbf{70}</mrow>
+              </md>
+            </p>
+            <p>The angle <m>\theta</m> measures the angle between the <m>x</m> axis and the projection of <m>\vec{F}</m> onto the <m>xy</m> plane.
+              <me>\theta = tan^{-1} \frac{F_y}{F_x} = tan^{-1}\left( \frac{-30}{20}\right) = \ang{-56.31}</me>
+            </p>
+            <p>The angle <m>\phi</m> is measured down from the <m>+z</m> axis to the vector <m>\vec{F}</m> and thus is the same as the direction cosine angle <m>\theta_z</m>.
+            <me>
+              \phi = \theta_z =cos^{-1} \frac{F_z}{|\vec{F}|} = cos^{-1}\left( \frac{60}{70} \right) = \ang{31.0}
+            </me>
+            </p>
+            <sidebyside widths="50%  50%" valign="middle">
+              <p>In summary, the three spherical components of <m>\vec{F}</m> are the magnitude of <m>\vec{F}</m> and the angles <m>\theta</m> and <m>\phi</m>. Notice that the sperical angle <m>\theta</m> is smaller than the direction cosine angle <m>\theta_x</m>, <m>\ang{56.31}\lt \ang{73.4}</m> as <m>\theta</m> is only in the <m>xy</m> plane, but <m>\theta_x</m> is a 3D angle from the <m>x</m> axis up to the vector <m>\ved{F}</m>.</p>
+              <p><image source="images/3d-components-sperical">
+                <description>Spherical components for <m>\vec{F}</m>.</description>
+              </image>
+              </p>
+            </sidebyside>
+          </solution>
+        </example>
+
+        <example xml:id="Chapter_02-3d-components-cylindrical">
+          <title>Cylindrical Coordinates</title>
+          <statement>
+            <sidebyside widths="50%  50%" valign="middle">
+              <image source="images/3d-components-sketch">
+                <description>A cable force pulls on an anchor ring centered on <m>x</m>, <m>y</m>, <m>z</m> axis origin.</description>
+              </image>
+              <p>A rope pulls on an anchor ring with the Cartesian components <m>\vec{F}=\lbf{\left &lt; 20, -30, 60 \right &gt;}</m>, where <m>lbf</m> represents the force pounds feet.</p>
+            </sidebyside>
+            <p>Find the cylindrical coordinates of <m>\vec{F}</m> where <m>\theta</m> is measured from the x axis and the height component, <m>z</m>, is measured up from the <m>xy</m> plane.</p>
+          </statement>
+          <answer>
+            <p>
+              <md>
+                <mrow>F \amp =/lbf{70}</mrow>
+                <mrow>\theta \amp =\ang{-56.31} \textrm{ or } \theta=\ang{303.69} </mrow>
+                <mrow>\z \amp =\lbf{60}</mrow>
+              </md>
+            </p>
+          </answer>
+          <solution>
+            <p>You'll notice that the spherical and cylindrical coordinates only vary by one component. The sperical system measures height with an angle, where the cylindrical system measures height in the units of the vector, in this case pounds-force <m>lbf</m>.</p>
+            <p>Again, the three components of <m>F</m> are perpendicular, we can apply the Pythagorean Theorem to find the magnitude of <m>F</m>.</p>
+            <p>
+              <md>
+                <mrow>F \amp = |\vec{F}| = \sqrt{F_x^2+F_y^2+F_z^2}</mrow>
+                <mrow>\amp = \lbf{\sqrt{20^2 + \left( -30 \right) ^2 + 60^2}}</mrow>
+                <mrow>\amp = \lbf{70}</mrow>
+              </md>
+            </p>
+            <p>The angle <m>\theta</m>, is the same as <m>\theta</m> in spherical and measures the angle between the <m>x</m> axis and the projection of <m>\vec{F}</m> onto the <m>xy</m> plane.
+              <me>\theta = tan^{-1} \frac{F_y}{F_x} = tan^{-1}\left( \frac{-30}{20}\right) = \ang{-56.31}
+              </me>
+            </p>
+            <p>The the height <m>z</m> is measured from the <m>xy</m> plane to the tip of vector <m>\vec{F}</m> and thus is the vertical force component <m>F_z</m>.
+            <me>
+              z = F_z = \lbf{60.0}
+            </me>
+            </p>
+            <sidebyside widths="50%  50%" valign="middle">
+              <p>In summary, the three cylindrical components of <m>\vec{F}</m> are the magnitude of <m>\vec{F}</m>, the angle <m>\theta</m>, and the height <m>z</m>.</p>
+              <p><image source="images/3d-components-cylindrical">
+                <description>Spherical components for <m>\vec{F}</m>.</description>
+              </image>
+              </p>
+            </sidebyside>
+          </solution>
+        </example>
+
+        <example xml:id="Chapter_02-Dot-products">
+          <title>Dot Products</title>
+          <statement>
+            <sidebyside widths="50%  50%" valign="middle">
+              <image source="images/dot-products">
+                <description>A cable force pulls on an anchor ring centered on the x, y, and z axis origin.</description>
+              </image>
+              <p>A cable pulls with tension <m>\vec{T}=\N{\left &lt; -50, 80, 40 \right &gt;}</m> on a <m>\m{0.4}</m> long anchor <m>AB</m>. The anchor is embedded in a concrete wall which is in the <m>xz</m> plane. The anchor lies in the <m>xy</m> plane at an angle <m>\ang{30}</m> off the <m>x</m> axis.</p>
+            </sidebyside>
+            <p>For the system above, compute the following:
+              <ol marker="A">
+                <li><p>Find the dot product of the cable tension <m>\vec{T}</m> and the anchor <m>\vec{AB}</m>.</p></li>
+                <li><p>Find the angle <m>\theta</m> between the cable tension <m>\vec{T}</m> and the anchor <m>\vec{AB}</m>.</p></li>
+                <li><p>Find the <em>scalar</em> projection of the cable tension <m>\vec{T}</m> onto the anchor <m>\vec{AB}</m>.</p></li>
+                <li><p>Find the <em>vector</em> projection of the cable tension <m>\vec{T}</m> onto the anchor <m>\vec{AB}</m>.</p></li>
+                <li><p>Find the vector portion of cable tension <m>\vec{T}</m> that is <em>perpendicular</em> to the anchor <m>\vec{AB}</m>.</p></li>
+              </ol></p>
+          </statement>
+          <answer>
+            <p>
+              <ol marker="A">
+                <li><p><m>\vec{T} \cdot \vec{AB} =\Nm{-33.32}</m></p></li>
+                <li><p><m>\theta = \ang{97.47}</m></p></li>
+                <li><p><m>||Proj_{\vec{AB}}\vec{T}|| = \N{-83.30} </m></p></li>
+                <li><p><m>Proj_{\vec{AB}}\vec{T} = \N{\left &lt; -72.14, 41.65, 0 \right &gt;}</m></p></li>
+                <li><p><m>\vec{T}_\perp \vec{AB} = \N{\left &lt; 22.14, 38.35, 40 \right &gt;}</m></p></li>
+              </ol>
+            </p>
+          </answer>
+          
+          <solution>
+            <p><em>A. Find the angle <m>\theta</m> between the cable tension <m>\vec{T}</m> and the anchor <m>\vec{AB}</m>.</em></p>
+              <p> If you are given the vector magnitudes and angle between them it is typically easiest to use the dot product equation <m>\vec{A} \cdot \vec{B} = A B\ cos\ \theta</m>. But in this case, we were given the components of the two vectors, so we'll use <m>\vec{A} \cdot \vec{B} = A_x B_x + A_y B_y + A_z B_z</m>.</p>
+              <p>
+                <md>
+                  <mrow>\vec{T} \amp =\N{\left &lt; -50, 80, 40 \right &gt;} </mrow>
+                  <mrow>\vec{AB} \amp = \m{\left &lt; 0.4\ cos\ \ang{30}, -0.4\ sin\ \ang{40}, 0 \right &gt;}</mrow>
+                  <mrow>\amp = \m{\left &lt; 0.3464, -0.2, 0 \right &gt;} </mrow>
+                  <mrow> \vec{T} \cdot \vec{AB} \amp = \left( \N{-50} \right) \left( \m{0.3464} \right) + \left( \N{80} \right) \left( \m{-0.2} \right) + \left( \N{40} \right) \left( \m{0} \right)</mrow>
+                  <mrow>\amp = \Nm{-33.32}</mrow>
+                </md>
+              </p>
+              <p>Note that the units from this equation are the product of both vector units (<m>Nm</m>). If you compute the dot product of two position vectors, the units will be length squared, or the dot product of two force vectors will be force squared.</p>
+              
+              <p><em>B. Find the angle <m>\theta</m> between the cable tension <m>\vec{T}</m> and the anchor <m>\vec{AB}</m>.</em></p>
+              <p> As <m>\vec{A} \cdot \vec{B} = A B\ cos\ \theta = A_x B_x + A_y B_y + A_z B_z</m> we can rearrange the terms of the later two equations to solve for the angle between the cable tension and <m>\vec{T}</m> and the anchor <m>\vec{AB}</m>.</p>
+              <p>
+                <md>
+                  <mrow>T \amp = \sqrt{\left( -50 \right)^2 + 80^2 + 40^2} = \N{102.47} </mrow>
+                  <mrow>AB \amp = \m{0.4}</mrow>
+                  <mrow>\theta \amp = cos^{-1}\ \left( \frac{T_x \left(AB_x \right) + T_y \left( AB_y \right) + T_z \left( AB_z \right) }{\left( T \right ) \left(AB \right)}\right)</mrow>
+                  <mrow> \amp = cos^{-1}\ \frac{\Nm{-33.32}}{\left( \N{102.47} \right ) \left(\m{0.4} \right)}</mrow>
+                  <mrow> \amp = \ang{97.47}</mrow>
+                </md>
+                </p>
+                <p>Note that <m>\theta \gt ang{90}</m> correctly cooresponds to a negative dot product when two vectors generally opposing each other.</p>
+              <p><em>C. Find the scalar projection of the the cable tension <m>\vec{T}</m> onto the anchor <m>\vec{AB}</m>.</em></p>
+              <p>	Recall that the scalar projection represents the scalar magnitude of the force that is directed along the arm. This is one of the most direct and practical applications of the dot product, to find out how much of one vector is parallel to another.</p>
+              <p>Notice that we are asked to find the magnitude of the tension force that is along (or parallel to) the anchor.  If we were to simply dot the tension force <m>\vec{T}</m> onto the anchor <m>\vec{AB}</m> we would end up with the product of the tension force <m>\vec{T}</m> parallel to the anchor <m>\vec{AB}</m> <em>times the length of the anchor</em>. Hence, we have to divide by the lenth of the anchor to end up with just a force with units of <m>N</m>.</p>
+              <p>
+                <md>
+                  <mrow>||Proj_{\vec{AB}}\vec{T}|| \amp = \frac {\frac{T}\cdot \vec{AB}}{AB} = \frac{-33.32\ N \enclose{horizontalstrike}{m}}{0.4\ \enclose{horizontalstrike}{m}}</mrow>
+                  <mrow> \amp = \N{-83.30}</mrow>
+                </md>
+              </p>
+              <p><em>Alternatively,</em> you could dot the force vector <m>\vec{T}</m> with the unit vector of AB, <m>\hat{AB}</m>, eliminating the need to divide by the length of AB.</p>
+              <p>
+                <md>
+                  <mrow>STARTHERE \amp </mrow>
+                </md>
+              </p>
+              <p>Recall that if the scalar magnitude is positive, the two vectors are generally in the same direction. But in this case, the scalar magnitude is negative, telling us that the tension vector and arm are generally in opposite directions.</p>
+            
+            
+            <sidebyside widths="50%  50%" valign="middle">
+              <p>In summary, the three cylindrical components of <m>\vec{F}</m> are the magnitude of <m>\vec{F}</m>, the angle <m>\theta</m>, and the height <m>z</m>.</p>
+              <p><image source="images/3d-components-cylindrical">
+                <description>Spherical components for <m>\vec{F}</m>.</description>
+              </image>
+              </p>
+            </sidebyside>
+          </solution>
+        </example>
+
+      </section>
+
+      <section xml:id="Ch4-examples">
+        <title>Examples for Chapter 4</title>
+        <example xml:id="Chapter_04-XXX">
+          <title>Dot Products</title>
+          <statement>
+            <sidebyside widths="50%  50%" valign="middle">
+              <image source="images/dot-products">
+                <description>A cable force pulls on an anchor ring centered on <m>x</m>, <m>y</m>, <m>z</m> axis origin.</description>
+              </image>
+              <p>A cable pulls with tension <m>\vec{T}=\N{\left &lt; -50, 80, 40 \right &gt;}</m> on a <m>m{0.4}</m> long anchor <m>AB</m>. The anchor is embedded in a concrete wall lying in the <m>xz</m> plane. The anchor is in the <m>xy</m> plane at an angle <m>\ang{30}</m> off the <m>x</m> axis.</p>
+            </sidebyside>
+            <p>Find the dot product of the cable tension <m>\vec{T}</m> and the anchor <m>\vec{AB}</m></p>
+          </statement>
+          <answer>
+            <p>For each scalar component, determine the direction of the corresponding moment vector.
+              <ol marker="A" cols="2">
+                <li><p><m>\vec{T} \cdot \vec{AB} =\Nm{-33.32}</m></p></li>
+                <li><p><m>\theta = \ang{97.47}</m></p></li>
+                <li><p><m>|Proj_{vec{AB}}\vec{T}| = \N{83.30} </m></p></li>
+                <li><p><m>Proj_{vec{AB}}\vec{T} = \vec{F}=\N{\left &lt; -72.14, 41.65, 0 \right &gt;}</m></p></li>
+              </ol>
+            </p>
+          </answer>
+          <solution>
+            <p>You'll notice that the spherical and cylindrical coordinates only vary by one component. The sperical system measures height with an angle, where the cylindrical system measures height in the units of the vector, in this case pounds-force <m>lbf</m>.
+              <md>
+                <mrow>\vec{T} \cdot \vec{AB} \amp =\left( /lbf{-50} \right)\left( /m{0.3464} \right)+\left( /lbf{80} \right)\left( /m{-0.2} \right)+\left( /lbf{40} \right)\left( /m{0} \right)</mrow>
+                <mrow>\theta \amp =\Nm{-33.32}</mrow>
+              </md>
+            </p>
+            <sidebyside widths="50%  50%" valign="middle">
+              <p>In summary, the three cylindrical components of <m>\vec{F}</m> are the magnitude of <m>\vec{F}</m>, the angle <m>\theta</m>, and the height <m>z</m>.</p>
+              <p><image source="images/3d-components-cylindrical">
+                <description>Spherical components for <m>\vec{F}</m>.</description>
+              </image>
+              </p>
+            </sidebyside>
+          </solution>
+        </example>
+      </section>
+    
+    </chapter>
+
+    <backmatter xml:id="backmatter">
+      <title>Backmatter</title>
+
+      <colophon>
+        <p> This book was authored in <pretext />. </p>
+      </colophon>
+
+    </backmatter>
+
+  </book>
+</pretext>
